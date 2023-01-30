@@ -1,12 +1,9 @@
 FROM python:3.10
 
-RUN pip install -U pipenv
-RUN pipenv install
+WORKDIR /smartBot_docker
 
-COPY . /usr/src/app
+COPY . .
 
-WORKDIR usr/src/app/src
+RUN pip install -r requirements.txt
 
-
-
-CMD ["python", "main.py"]
+ENTRYPOINT ["python", "main.py"]
