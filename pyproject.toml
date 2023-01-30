@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "homework-1"
+name = "Py_Web_HW_2"
 version = "0.1.0"
 description = ""
 authors = ["Oleksii Latypov <oleksii.latypov.la@gmail.com>"]
